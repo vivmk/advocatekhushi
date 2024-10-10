@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Advocate Khushi</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body,
+      html {
+        height: 100%;
+        font-family: Arial, sans-serif;
+      }
+
+      .container {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 1200px;
+        width: 100%;
+        padding: 20px;
+        background-color: #fff;
+        position: relative;
+        z-index: 1;
+      }
+
+      .text-section {
+        padding: 20px;
+        width: 100%;
+        max-width: 600px;
+      }
+
+      h1 {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        color: #333;
+      }
+
+      p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        color: #555;
+      }
+
+      .image-section {
+        flex-grow: 1;
+        background-image: url("khushi.jpg"); /* Replace with the actual image URL */
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 100%;
+        max-width: 600px;
+        width: 100%;
+        z-index: 0;
+      }
+
+      /* Responsive Styles */
+      @media (min-width: 768px) {
+        .container {
+          flex-direction: row;
+        }
+
+        .content {
+          flex-direction: row;
+        }
+
+        .text-section {
+          width: 50%;
+        }
+
+        .image-section {
+          width: 50%;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .container {
+          flex-direction: column;
+        }
+
+        .image-section {
+          height: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="text-section">
+          <h1>Hello, I am Advocate Khushi Tiwari 👋</h1>
+          <p>
+            I am a passionate advocate student dedicated to helping individuals
+            navigate the complexities of law. I specialize in legal research,
+            case analysis, and advocacy to ensure justice and fairness. My goal
+            is to make a positive impact through law and advocacy.
+          </p>
+        </div>
+        <div class="image-section"></div>
+      </div>
+    </div>
+  </body>
+</html>
